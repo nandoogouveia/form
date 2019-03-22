@@ -22,6 +22,12 @@ function criarTabela(conteudo) {
   tabela.appendChild(tbody);
   return tabela;
 }
-
+document.getElementById("tabela").appendChild(criarTabela([
+  ["posição", "time", "pontos"],
+  [1,    "Santos",  18],
+  [2,    "São Paulo", 15],
+  [3,    "Palmeiras",    12],
+  [4,    "Corinthians", 0]
+]));
 
 
