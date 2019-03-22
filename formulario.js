@@ -16,5 +16,12 @@ function criarTabela(conteudo) {
       t.appendChild(texto);
       tr.appendChild(t);
     }
+    (i==0)?thead.appendChild(tr):tbody.appendChild(tr);
+  }
+  tabela.appendChild(thead);
+  tabela.appendChild(tbody);
+  return tabela;
+}
+
 
 
